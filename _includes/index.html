@@ -1,7 +1,5 @@
 {% assign posts = site.posts %}
 {% if site.paginate > 0 %}{% assign posts = paginator.posts %}{% endif %}
-{% if site.google_analytics and jekyll.environment == 'production' %}
-{% include google-analytics.html %}
 {% endif %}
 
 <section id="posts" class="posts-expand">
